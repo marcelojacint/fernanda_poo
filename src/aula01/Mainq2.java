@@ -1,3 +1,5 @@
+package aula01;
+
 public class Mainq2 {
 
     public static void main(String[] args) {
