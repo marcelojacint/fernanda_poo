@@ -46,7 +46,7 @@ public class Venda implements Pagamento {
        double[] parcelas= new double[parcela];
         Arrays.fill(parcelas, parcelaCredito);
         for (double parc : parcelas) {
-            System.out.println("Pagamento parcelas " + " 1 " + "x de : R$ " + parc);
+            System.out.printf("Pagamento parcelas " + " 1 " + "x de : R$ %.2f\n", parc);
         }
 
     }
@@ -61,8 +61,6 @@ public class Venda implements Pagamento {
        }
         return false;
     }
-
-
 
     public boolean adicionarQuantidadeProdutoExistente(String nome, int adiciona) {
        for (Produto produto : produtos) {
